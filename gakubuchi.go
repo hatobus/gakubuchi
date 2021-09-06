@@ -53,7 +53,7 @@ func (g *Gakubuchi) Print() {
 
 	fmt.Fprintf(os.Stdout, "%v%v%v", g.corner, strings.Repeat(g.edge, maxLength+(2*g.spaces)), g.corner)
 	for _, s := range splited {
-		fmt.Fprintf(os.Stdout, "%v%v%v%v%v", g.corner, strings.Repeat(" ", g.spaces), strings.Repeat(" ", g.spaces), g.corner)
+		fmt.Fprintf(os.Stdout, "%v%v%v%v%v", g.corner, strings.Repeat(" ", g.spaces), s, strings.Repeat(" ", g.spaces), g.corner)
 	}
 	fmt.Fprintf(os.Stdout, "%v%v%v", g.corner, strings.Repeat(g.edge, maxLength+(2*g.spaces)), g.corner)
 }
